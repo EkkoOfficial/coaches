@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<!-- ***************************************************************
+*    Diese Datei gehört zum  WebEng-Kurs an der HNU
+*    Copyright (c) by Sarah Schmirander                    
+*    Licensed under GPL3, see http://www.gnu.org/licenses/gpl.html
+******************************************************************** -->
+
+<html>
+
+<head>
+    <title>Umbau</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="stylesheets/css-style.css">
+    <script type="text/javascript" src="client-js/jquery-3.5.1.min.js"></script>
+
+</head>
+
+
+
+
+<body class="paket">
+    <div id="leererBlock"></div>
+
+    <header>
+        <nav class="navigation">
+
+            <a href="coaches.html"> <img id="logo" src="pics/7ed8bec5-93f0-4398-9f51-a66a4599e2b7.webp" /> </a>
+            <ul>
+
+                <li><a href="umbau.html">Shop</a></li>
+                <li><a href="aktionen.html">Aktionen</a></li>
+                <li><a href="umbau.html">Teammitglieder</a></li>
+                <li><a href="umbau.html">Partner</a></li>
+                <li><a href="umbau.html">Kontaktanfragen</a></li>
+                <li><a href="umbau.html">Coaches Anmeldungen</a></li>
+                <li><a href="umbau.html">Showcase Videos</a></li>
+                <li><button id="logKnopf">Einloggen</button></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+
+
+
+    <br />
+
+    <div id="main">
+
+        <div class="platzhalter"></div>
+
+        <div class="main">
+            
+            <div id="umbau" class="view">
+            <h1 > Tut uns leid!
+                Diese Seite befindet sich noch im Umbau</h1>
+            <a id="zurueckButton" href="coaches.html"><button>zurueck</button></a>
+        </div></div>
+
+
+
+
+        <!-- LOGINMASKE -->
+
+        <div id="loginMaske" class="view">
+            <h2 class="ueberschrift">Logge dich ein!</h2>
+            <form action="javascript:einloggen()" method="post">
+
+                <table>
+                    <tr>
+                        <div class="formular1">
+                            <td> <label>Benutzername</label></td>
+                            <td> <input type="text" placeholder="Benutzernamen eingeben" /> </td>
+                        </div>
+                    </tr>
+                    <tr>
+                        <div class="formular">
+                            <td> <label>Passwort</label> </td>
+                            <td> <input type="password" placeholder="Passwort eingeben" /> </td>
+                        </div>
+                    </tr>
+                    <tr>
+                        <div id="rolle">
+                            <td> <input type="radio" name="rolle" value="admin" />als Admin </td>
+                            <td> <input type="radio" name="rolle" value="mitarbeiter" />als Mitarbeiter </td>
+                        </div>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td> <input type="submit" value="Login" /></td>
+                    </tr>
+                </table>
+            </form>
+
+        </div>
+
+
+    
+
+
+    </div>
+
+
+
+
+
+    <script type="text/javascript">
+        //ANZEIGEN
+        function umbauAnzeigen() {
+            console.log('umbauAnzeigen: ');
+            $(".view").hide();
+            $("#umbau").show();
+        }
+
+
+
+        /*  //nur umbau sichtbar machen
+         */
+        $(".view").hide();
+        $("#umbau").show;
+        /*
+                  
+                   
+
+                        
+              */
+        // ********* FUNKTIONEN ZUM LOGIN UND LOGOUT **********
+        function checkeBerechtigungen() {
+            console.log("Funktion checkeBerechtigungen");
+            //Alle Knöpfe auf unsichtbar setzen
+            $(".adminButton, .maButton").hide();
+
+            aktuelleRolle = leseRolle();
+            if (aktuelleRolle == 'admin') {
+                console.log("\t admin");
+                $(".adminButton").show();
+            } else if (aktuelleRolle == 'mitarbeiter') {
+                console.log("\t mitabeiter");
+                $(".maButton").show();
+            } else {
+                console.log("\t nicht eingeloggt");
+            }
+
+
+
+        }
+
+        function leseRolle() {
+            console.log("Funktion leseRolle");
+            return $("input[name='rolle']:checked").val();
+
+
+        }
+
+        function einloggen() {
+            console.log("Funktion einloggen mit " + rolle);
+
+            //Loggen-Knopf setzen
+            setLoginButton('ausloggen');
+
+            //Richtige Ansicht nach dem Einloggen anzeigen
+            umbauAnzeigen()
+            //Berechtigungen anpassen
+            checkeBerechtigungen();
+
+        }
+
+        function ausloggen() {
+            console.log("Funktion ausloggen");
+
+            //Ausloggen
+            $("input[name='rolle']").prop('checked', false);
+
+            //Loggen-Knopf setzen
+            setLogoutButton('zeigeLoginmaske');
+            //Richtige Ansicht nach dem Ausloggen anzeigen
+            umbauAnzeigen()
+            //Berechtigungen anpassen
+            checkeBerechtigungen();
+        }
+
+        function setLoginButton(func) {
+            console.log("Funktion setLoginButton mit " + func)
+            //Loggen-Knopf zu Logout-Knopf machen
+            $("#logKnopf").html("Ausloggen")
+                .attr("onclick", func + "()");
+        }
+
+        function setLogoutButton(func) {
+            console.log("Funktion setLogoutButton mit " + func)
+            //Loggen-Knopf zu Login-Knopf machen
+            $("#logKnopf").html("Einloggen")
+                .attr("onclick", func + "()");
+        }
+
+        function zeigeLoginmaske() {
+            console.log('zeigeLoginmaske');
+            //nur Loginansicht sichtbar machen
+            $(".view").hide();
+            $("#loginMaske").show();
+        }
+
+
+
+        umbauAnzeigen();
+        ausloggen();
+    </script>
+
+
+    <div>
+        <footer>
+
+            <nav>
+
+                <ul>
+                    <li><a href="umbau.html">Impressum</a></li>
+                    <li><a href="umbau.html">Datenschutz</a></li>
+                    <li><a href="umbau.html">Cookie-Einstellungen</a></li>
+                    <li><a href="umbau.html">Widerrufsbelehrung</a></li>
+                    <li><a href="umbau.html">AGB</a></li>
+
+
+                </ul>
+
+            </nav>
+
+        </footer>
+    </div>
+
+</body></html>
+
+
+
+
+
+
+    
+    
+    
+
+  

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../stylesheets/css-style.css">
+    <script type="text/javascript" src="../client-js/jquery-3.5.1.min.js"></script>
+    <title>Admin-Overview</title>
+</head>
+<body>
+<header>
+    <nav class="navigation">
+
+        <a href="umbau.html"> <img id="logo" src="pics/logo_StrongHeart.png" /> </a>
+        <ul>
+
+            <li><a href="../umbau.html">Shop</a></li>
+            <li><a href="../aktionen.html">Aktionen</a></li>
+            <li><a href="../umbau.html">Teammitglieder</a></li>
+            <li><a href="../umbau.html">Partner</a></li>
+            <li><a href="../umbau.html">Kontaktanfragen</a></li>
+            <li><a href="../umbau.html">Coaches Anmeldungen</a></li>
+            <li><a href="../umbau.html">Showcase Videos</a></li>
+            <li><button id="logKnopf">Einloggen</button></li>
+        </ul>
+
+    </nav>
+
+
+    <!-- LOGINMASKE -->
+
+    <div id="loginMaske" class="view">
+        <div class="platzhalter"></div>
+        <h2 class="ueberschrift">Logge dich ein!</h2>
+        <form action="javascript:einloggen()" method="post">
+
+            <table>
+                <tr>
+                    <div class="formular1">
+                        <td> <label>Benutzername</label></td>
+                        <td> <input type="text" placeholder="Benutzernamen eingeben" /> </td>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="formular">
+                        <td> <label>Passwort</label> </td>
+                        <td> <input type="password" placeholder="Passwort eingeben" /> </td>
+                    </div>
+                </tr>
+                <tr>
+                    <div id="rolle">
+                        <td> <input type="radio" name="rolle" value="admin" checked />als Admin </td>
+                        <td> <input type="radio" name="rolle" value="mitarbeiter" />als Mitarbeiter </td>
+                    </div>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td> <input type="submit" value="Login" /></td>
+                </tr>
+            </table>
+        </form>
+
+    </div>
+</header>
+
+<main id="wrapper">
+    <section class="members-list">
+
+        <table class="table-edited">
+            <thead>
+            <tr>
+                <th>Vorname</th>
+                <th>Nachname</th>
+                <th>Adresse</th>
+                <th>PLZ, Ort</th>
+                <th>E-Mail</th>
+                <th>Spendenbetrag</th>
+                <th>Spende für</th>
+                <th>Zahlungsmethode</th>
+            </tr>
+            </thead>
+
+            </thead>
+            <tbody>
+            <tr>
+                <th>Albert</th>
+                <th>Einstein</th>
+                <th>Hirschstraße 18</th>
+                <th>89075, Ulm</th>
+                <th>alert-einstein.emc2@gmail.com</th>
+                <th>500€</th>
+                <th>Exit-Deutschland e.V.</th>
+                <th>PayPal</th>
+            </tr>
+            <tr>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>Stephen</td>
+                <td>Hawking</td>
+                <td>Broadway 1</td>
+                <td>36782 New-York</td>
+                <td>stephie.hawk-underground3@gmx.de</td>
+                <td>250€</td>
+                <td>ALS-Ice-Bucket-Challenge</td>
+                <td>Überweisung</td>
+            </tr>
+            <tr>
+                <td>Marie</td>
+                <td>Curie</td>
+                <td>Rue de la Baguette</td>
+                <td>42678 Paris</td>
+                <td>rayons-x@web.de</td>
+                <td>750€</td>
+                <td>Bikini-Atoll-Foundation</td>
+                <td>Lastschrift</td>
+            </tr>
+            <tr>
+                <td>Robert</td>
+                <td>Koch</td>
+                <td>Bakterienalee 879</td>
+                <td>23786 Berlin</td>
+                <td>rki@outlook.com</td>
+                <td>450€</td>
+                <td>Querdenken 731 e.V.</td>
+                <td>Paypal</td>
+            </tr>
+            <tr>
+                <td>Alfred</td>
+                <td>Nobel</td>
+                <td>Am Pulverfass 32</td>
+                <td>23879 Stockholm(oder Oslo)</td>
+                <td>tnt@hotmail.com</td>
+                <td>680€</td>
+                <td>Nobelpreisstiftung</td>
+                <td>Überweisung</td>
+            </tr>
+            </tbody>
+        </table>
+        <nav class="list-controls">
+            <button><img src="../assets/images/iconfinder_15.Pencil_290135.png"></button>
+            <button><img src="../assets/images/iconfinder_basket_1814090.png"></button>
+        </nav>
+    </section>
+</main>
+
+<footer>
+
+    <nav>
+
+        <ul>
+            <li><a href="umbau.html">Impressum</a></li>
+            <li><a href="umbau.html">Datenschutz</a></li>
+            <li><a href="umbau.html">Cookie-Einstellungen</a></li>
+            <li><a href="umbau.html">Widerrufsbelehrung</a></li>
+            <li><a href="umbau.html">AGB</a></li>
+
+
+        </ul>
+
+    </nav>
+
+</footer>
+</body>
+</html>
