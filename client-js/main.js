@@ -3,6 +3,12 @@ import {
 } from './customers.js';
 
 const init = {
+    mock: () => {
+        mockCustomers();
+    },
+    default: () => {
+
+    },
     adminPage: () => {
         displayCustomers();
         mockCustomers();
@@ -10,6 +16,9 @@ const init = {
 }
 
 window.addEventListener('DOMContentLoaded', () => {
+
+    init.mock();
+    init.default();
 
     const body = document.getElementsByTagName('body')[0];
 

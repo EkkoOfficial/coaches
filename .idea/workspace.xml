@@ -20,13 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="89f38922-bee4-4d9f-bd7d-06ae4b736616" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client-js/customers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-js/customers.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-js/mock/customersMock.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coaches.html" beforeDir="false" afterPath="$PROJECT_DIR$/coaches.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-js/customers.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-js/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +52,9 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -77,6 +76,7 @@
       <workItem from="1605862776359" duration="15081000" />
       <workItem from="1606052697519" duration="4125000" />
       <workItem from="1606057894683" duration="6830000" />
+      <workItem from="1606143792357" duration="817000" />
     </task>
     <servers />
   </component>
@@ -93,12 +93,25 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="747" y="306" width="652" height="431" key="#Web_Browsers" timestamp="1606144387572">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state x="747" y="306" width="652" height="431" key="#Web_Browsers/0.0.1920.1044@0.0.1920.1044" timestamp="1606144387572" />
     <state x="531" y="235" key="FileChooserDialogImpl" timestamp="1606056691022">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
     <state x="531" y="235" key="FileChooserDialogImpl/0.0.1500.960@0.0.1500.960" timestamp="1606056691022" />
+    <state x="560" y="258" key="Vcs.Push.Dialog.v2" timestamp="1606144064507">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state x="560" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1044@0.0.1920.1044" timestamp="1606144064507" />
+    <state x="744" y="423" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1606144055899">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state x="744" y="423" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1920.1044@0.0.1920.1044" timestamp="1606144055899" />
     <state x="937" y="331" key="run.anything.popup" timestamp="1606058643198">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
