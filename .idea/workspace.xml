@@ -1,7 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="89f38922-bee4-4d9f-bd7d-06ae4b736616" name="Default Changelist" comment="" />
+    <list default="true" id="89f38922-bee4-4d9f-bd7d-06ae4b736616" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/client-js/customers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-js/customers.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-js/mock/customersMock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coaches.html" beforeDir="false" afterPath="$PROJECT_DIR$/coaches.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -9,6 +35,19 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="2" />
   </component>
   <component name="ProjectId" id="1kXMrDowtDmVf0B9tVljsiA0z7i" />
   <component name="ProjectViewState">
@@ -37,16 +76,36 @@
       <workItem from="1605842680623" duration="397000" />
       <workItem from="1605862776359" duration="15081000" />
       <workItem from="1606052697519" duration="4125000" />
+      <workItem from="1606057894683" duration="6830000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="531" y="235" key="FileChooserDialogImpl" timestamp="1606056691022">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
     <state x="531" y="235" key="FileChooserDialogImpl/0.0.1500.960@0.0.1500.960" timestamp="1606056691022" />
+    <state x="937" y="331" key="run.anything.popup" timestamp="1606058643198">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="937" y="331" key="run.anything.popup/0.0.2560.1400/-3840.0.2560.1400@0.0.2560.1400" timestamp="1606058643198" />
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1606059286893">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400/-3840.0.2560.1400@0.0.2560.1400" timestamp="1606059286893" />
   </component>
 </project>

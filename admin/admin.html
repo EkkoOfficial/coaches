@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <link rel="stylesheet" href="../stylesheets/css-style.css">
     <script type="text/javascript" src="../client-js/jquery-3.5.1.min.js"></script>
     <title>Admin-Overview</title>
 </head>
-<body>
+<body id="adminPage">
 <header>
     <nav class="navigation">
 
-        <a href="umbau.html"> <img id="logo" src="pics/logo_StrongHeart.png" /> </a>
+        <a href="umbau.html"> <img id="logo" src="pics/logo_StrongHeart.png"/> </a>
         <ul>
 
             <li><a href="../umbau.html">Shop</a></li>
@@ -20,7 +20,9 @@
             <li><a href="../umbau.html">Kontaktanfragen</a></li>
             <li><a href="../umbau.html">Coaches Anmeldungen</a></li>
             <li><a href="../umbau.html">Showcase Videos</a></li>
-            <li><button id="logKnopf">Einloggen</button></li>
+            <li>
+                <button id="logKnopf">Einloggen</button>
+            </li>
         </ul>
 
     </nav>
@@ -36,25 +38,25 @@
             <table>
                 <tr>
                     <div class="formular1">
-                        <td> <label>Benutzername</label></td>
-                        <td> <input type="text" placeholder="Benutzernamen eingeben" /> </td>
+                        <td><label>Benutzername</label></td>
+                        <td><input type="text" placeholder="Benutzernamen eingeben"/></td>
                     </div>
                 </tr>
                 <tr>
                     <div class="formular">
-                        <td> <label>Passwort</label> </td>
-                        <td> <input type="password" placeholder="Passwort eingeben" /> </td>
+                        <td><label>Passwort</label></td>
+                        <td><input type="password" placeholder="Passwort eingeben"/></td>
                     </div>
                 </tr>
                 <tr>
                     <div id="rolle">
-                        <td> <input type="radio" name="rolle" value="admin" checked />als Admin </td>
-                        <td> <input type="radio" name="rolle" value="mitarbeiter" />als Mitarbeiter </td>
+                        <td><input type="radio" name="rolle" value="admin" checked/>als Admin</td>
+                        <td><input type="radio" name="rolle" value="mitarbeiter"/>als Mitarbeiter</td>
                     </div>
                 </tr>
                 <tr>
                     <td></td>
-                    <td> <input type="submit" value="Login" /></td>
+                    <td><input type="submit" value="Login"/></td>
                 </tr>
             </table>
         </form>
@@ -63,15 +65,16 @@
 </header>
 
 <main id="wrapper">
-    <section class="members-list container">
+    <section class="container">
 
-        <table class="table">
+        <table id="members_list" class="table">
             <thead>
             <tr>
                 <th>Vorname</th>
                 <th>Nachname</th>
                 <th>Adresse</th>
-                <th>PLZ, Ort</th>
+                <th>PLZ</th>
+                <th>Ort</th>
                 <th>E-Mail</th>
                 <th>Spendenbetrag</th>
                 <th>Spende für</th>
@@ -81,7 +84,7 @@
 
             </thead>
             <tbody>
-            <tr>
+            <!--<tr>
                 <th>Albert</th>
                 <th>Einstein</th>
                 <th>Hirschstraße 18</th>
@@ -140,7 +143,7 @@
                 <td>680€</td>
                 <td>Nobelpreisstiftung</td>
                 <td>Überweisung</td>
-            </tr>
+            </tr>-->
             </tbody>
         </table>
         <nav class="list-controls">
@@ -176,7 +179,6 @@
     }
 
 
-
     /*  //nur Homepage sichtbar machen
      */
     $(".view").hide();
@@ -203,7 +205,6 @@
         } else {
             console.log("\t nicht eingeloggt");
         }
-
 
 
     }
@@ -267,11 +268,10 @@
     }
 
 
-
     homepageAnzeigen();
     $("#loginMaske").hide();
     setLoginButton();
 </script>
-
+<script type="module" src="../client-js/main.js"></script>
 </body>
 </html> 
