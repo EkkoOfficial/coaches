@@ -19,10 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89f38922-bee4-4d9f-bd7d-06ae4b736616" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="89f38922-bee4-4d9f-bd7d-06ae4b736616" name="Default Changelist" comment="added Customer Mock">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-js/customers.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/aendern.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/bearbeiten.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-js/customers.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-js/customers.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-js/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,8 +76,16 @@
       <workItem from="1605862776359" duration="15081000" />
       <workItem from="1606052697519" duration="4125000" />
       <workItem from="1606057894683" duration="6830000" />
-      <workItem from="1606143792357" duration="817000" />
+      <workItem from="1606143792357" duration="5387000" />
     </task>
+    <task id="LOCAL-00001" summary="added Customer Mock">
+      <created>1606144726943</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1606144726943</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -95,19 +103,27 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added Customer Mock" />
+    <option name="LAST_COMMIT_MESSAGE" value="added Customer Mock" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="747" y="306" width="652" height="431" key="#Web_Browsers" timestamp="1606144387572">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
     <state x="747" y="306" width="652" height="431" key="#Web_Browsers/0.0.1920.1044@0.0.1920.1044" timestamp="1606144387572" />
+    <state x="559" y="71" key="CommitChangelistDialog2" timestamp="1606144655918">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state x="559" y="71" key="CommitChangelistDialog2/0.0.1920.1044@0.0.1920.1044" timestamp="1606144655918" />
     <state x="531" y="235" key="FileChooserDialogImpl" timestamp="1606056691022">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
     <state x="531" y="235" key="FileChooserDialogImpl/0.0.1500.960@0.0.1500.960" timestamp="1606056691022" />
-    <state x="560" y="258" key="Vcs.Push.Dialog.v2" timestamp="1606144064507">
+    <state x="560" y="258" key="Vcs.Push.Dialog.v2" timestamp="1606144734204">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
-    <state x="560" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1044@0.0.1920.1044" timestamp="1606144064507" />
+    <state x="560" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1044@0.0.1920.1044" timestamp="1606144734204" />
     <state x="744" y="423" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1606144055899">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>

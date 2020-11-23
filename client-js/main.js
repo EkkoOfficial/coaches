@@ -1,5 +1,5 @@
 import {
-    displayCustomers, mockCustomers
+    displayCustomers, loadCustomer, mockCustomers, registerCustomerSaveEvent
 } from './customers.js';
 
 const init = {
@@ -11,15 +11,25 @@ const init = {
     },
     adminPage: () => {
         displayCustomers();
-        mockCustomers();
+    },
+    editCustomerPage() {
+        loadCustomer();
+        registerCustomerSaveEvent();
     }
 }
 
 window.addEventListener('DOMContentLoaded', () => {
-
+    /**
+     * initialize testdata
+     */
     init.mock();
+    /**
+     * initialize global functions
+     */
     init.default();
-
+    /**
+     * initialize per page functions
+     */
     const body = document.getElementsByTagName('body')[0];
 
     if (body.id === '') return;

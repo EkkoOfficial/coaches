@@ -4,7 +4,9 @@ const CUSTOMERS_STORAGE_KEY = 'customers';
 
 
 export function mockCustomers() {
-    saveCustomersToLS(customersMock);
+    if (!window.localStorage.getItem(CUSTOMERS_STORAGE_KEY)) {
+        saveCustomersToLS(customersMock);
+    }
 }
 
 /**
@@ -47,6 +49,18 @@ export function deleteCustomerById(customerId) {
     displayCustomers();
 }
 
+export function getCustomerById(customerId) {
+    const customers = getCustomersFromLS();
+    return customers.find(c => c.id.toString() === customerId);
+}
+
+export function updateCustomer(customerData) {
+    const customers = getCustomersFromLS();
+    const index = customers.findIndex(c => c.id.toString() === customerData.id);
+    customers[index] = customerData;
+    saveCustomersToLS(customers);
+}
+
 /**
  * displays the customers
  */
@@ -80,9 +94,39 @@ export function displayCustomers() {
         const editAction = document.createElement('a');
         editAction.href = `bearbeiten.html?customerId=${customer.id}`;
         editAction.innerText = 'E';
-        tr.appendChild(editAction);
-        tr.appendChild(deleteAction);
+        actions.appendChild(editAction);
+        actions.appendChild(deleteAction);
+        tr.appendChild(actions);
 
         tbody.appendChild(tr);
+    });
+}
+
+export function loadCustomer() {
+    const params = new URLSearchParams(window.location.search);
+    const customerId = params.get('customerId');
+    const customer = getCustomerById(customerId);
+
+    document.querySelector('#customerId').setAttribute('value', customer.id);
+    document.querySelector('#prename').setAttribute('value', customer.prename);
+    document.querySelector('#lastname').setAttribute('value', customer.lastname);
+    document.querySelector('#address').setAttribute('value', customer.address);
+    document.querySelector('#city').setAttribute('value', customer.city);
+    document.querySelector('#zipCode').setAttribute('value', customer.zipCode);
+}
+
+export function registerCustomerSaveEvent() {
+    const editCustomerForm = document.querySelector('#editCustomerForm');
+
+    editCustomerForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const formData = new FormData(editCustomerForm);
+        const customer = {};
+        formData.forEach((entry, index) => {
+            customer[index] = entry;
+        });
+
+        updateCustomer(customer);
+        window.history.back();
     });
 }

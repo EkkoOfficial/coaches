@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="../stylesheets/css-style.css">
+    <script type="text/javascript" src="../client-js/jquery-3.5.1.min.js"></script>
+    <title>Admin-Overview</title>
+</head>
+<body id="editCustomerPage">
+<header>
+    <nav class="navigation">
+
+        <a href="umbau.html"> <img id="logo" src="pics/logo_StrongHeart.png"/> </a>
+        <ul>
+
+            <li><a href="../umbau.html">Shop</a></li>
+            <li><a href="../aktionen.html">Aktionen</a></li>
+            <li><a href="../umbau.html">Teammitglieder</a></li>
+            <li><a href="../umbau.html">Partner</a></li>
+            <li><a href="../umbau.html">Kontaktanfragen</a></li>
+            <li><a href="../umbau.html">Coaches Anmeldungen</a></li>
+            <li><a href="../umbau.html">Showcase Videos</a></li>
+            <li>
+                <button id="logKnopf">Einloggen</button>
+            </li>
+        </ul>
+
+    </nav>
+
+
+    <!-- LOGINMASKE -->
+
+    <div id="loginMaske" class="view">
+        <div class="platzhalter"></div>
+        <h2 class="ueberschrift">Logge dich ein!</h2>
+        <form action="javascript:einloggen()" method="post">
+
+            <table>
+                <tr>
+                    <div class="formular1">
+                        <td><label>Benutzername</label></td>
+                        <td><input type="text" placeholder="Benutzernamen eingeben"/></td>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="formular">
+                        <td><label>Passwort</label></td>
+                        <td><input type="password" placeholder="Passwort eingeben"/></td>
+                    </div>
+                </tr>
+                <tr>
+                    <div id="rolle">
+                        <td><input type="radio" name="rolle" value="admin" checked/>als Admin</td>
+                        <td><input type="radio" name="rolle" value="mitarbeiter"/>als Mitarbeiter</td>
+                    </div>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Login"/></td>
+                </tr>
+            </table>
+        </form>
+
+    </div>
+</header>
+
+<main id="wrapper">
+    <section class="edit-customer">
+        <form id="editCustomerForm" name="editCustomerForm">
+            <div class="form-group"><label for="prename"></label><input type="text" id="prename" name="prename"></div>
+            <div class="form-group"><label for="lastname"></label><input type="text" id="lastname" name="lastname"></div>
+            <div class="form-group"><label for="address"></label><input type="text" id="address" name="address"></div>
+            <div class="form-group"><label for="city"></label><input type="text" id="city" name="city"></div>
+            <div class="form-group"><label for="zipCode"></label><input type="text" id="zipCode" name="zipcode"></div>
+            <div class="form-group">
+                <input type="hidden" name="id" id="customerId" >
+                <button type="submit">Speichern</button>
+            </div>
+        </form>
+    </section>
+</main>
+
+<footer>
+
+    <nav>
+
+        <ul>
+            <li><a href="umbau.html">Impressum</a></li>
+            <li><a href="umbau.html">Datenschutz</a></li>
+            <li><a href="umbau.html">Cookie-Einstellungen</a></li>
+            <li><a href="umbau.html">Widerrufsbelehrung</a></li>
+            <li><a href="umbau.html">AGB</a></li>
+
+
+        </ul>
+
+    </nav>
+
+</footer>
+<script type="module" src="../client-js/main.js"></script>
+</body>
+</html>
